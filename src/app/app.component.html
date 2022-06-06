@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <span>CryptoCurrency Tracker</span>
+  <span class="example-spacer"></span>
+  <mat-form-field>
+    <mat-select (valueChange)="sendCurrency($event)" [(ngModel)]="selectedCurrency">
+      <mat-option class="mat-option" selected value="USD">USD
+      </mat-option>
+      <mat-option value="GBP">GBP
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
+
+

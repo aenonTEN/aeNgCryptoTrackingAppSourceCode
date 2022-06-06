@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 221, 0);
+    text-shadow: 2px 2px 3px black;
+    height: 40%;
+    font-family: 'Nothing You Could Do', cursive;
+    h2{
+        font-size: 3.75rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        line-height: 1.2;
+        letter-spacing: -0.0083em;
+        
+    }
+    h6{
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 3px black;
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.57;
+        letter-spacing: 0.00714em;
+    }
+}
+
+
+.banner{
+    position: relative;
+    background-image: url('../../../assets/SL-0212121-40670-11.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+.card {
+    background: transparent;
+    border: none;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    color: aliceblue;
+    img{
+        margin: 0 auto;
+        width: 70px;
+    }
+
+    h5{
+        font-weight: 500;
+
+    }
+    p{
+        font-weight: 700;
+    }
+}
+
+table {
+    width: 100%;
+    background-color: black;
+
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+    background-color: black;
+
+  }
+  
+  td, th {
+    width: 25%;
+    ;
+  }
+
+  th {
+      color: black;
+  }
+
+  :host ::ng-deep .mat-paginator-outer-container {
+      color: #fff;
+  }
+
+  :host ::ng-deep .mat-sort-header-content {
+      color: #fff;
+  }
+
+  :host ::ng-deep tr.mat-header-row {
+      background-color: rgb(255, 208, 0);
+  }
+
+  :host ::ng-deep tr.mat-row {
+      cursor: pointer;
+  }
+  
+  :host ::ng-deep .mat-paginator {
+      background-color: black;
+
+  }
+  :host ::ng-deep .mat-form-field {
+      background: transparent;
+
+  }
+
+  @media only screen and (max-width: 1000px) {
+    
+    .img-fluid{
+        padding: 5px;
+    }
+    p, h5{
+        display: none;
+    }
+  
+}

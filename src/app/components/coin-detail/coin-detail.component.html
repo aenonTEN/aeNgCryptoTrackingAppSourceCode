@@ -1,0 +1,18 @@
+
+<div class="container-fluid mt-3">
+    <div class="row">
+    <div class="col-md-3 details">
+        <div class="img">
+            <img [src]="coinData?.image?.large" alt="">
+        </div>
+        <h3 style="color: #fff; font-size: 23px;">{{coinData?.name}}</h3>
+        <h4 [innerHtml]="coinData?.description?.en.split('. ')[0]" style="color: #fff;"></h4>
+        <div class="more-detail" style="color: #fff;">
+        <span class="title">Rank: </span><span class="value">{{coinData?.market_cap_rank}}</span><br>
+        <span class="title">Market Cap:  </span><span class="value">{{coinData?.market_data?.market_cap?.usd | currency: "USD"}}</span><br>
+        <span class="title">Price:  </span><span class="value">{{coinData?.market_data?.current_price?.usd | currency: "USD"}}</span>
+    </div>
+
+    </div>
+    </div>
+</div>
